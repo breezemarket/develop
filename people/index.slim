@@ -1,0 +1,9 @@
+- ['農家介紹', '社區團體', '社福團體', '友善店家'].each do |title|
+  h1 = title
+  ul
+    - 3.times do
+      li
+        h2
+          a href="/people/person" = zh_lorem_name
+        = image
+        p = zh_sentences
